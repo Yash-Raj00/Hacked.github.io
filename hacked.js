@@ -1,0 +1,101 @@
+let btn = document.getElementsByTagName("button")[0];
+let stop = new Date().getTime();
+async function y() {
+    let p1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("!! IDENTIFYING THIS SYSTEM AND GETTING CONTROLS.");
+        }, 2000);
+    });
+    let p2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("!! ACCESSING PERMISSIONS..PLEASE WAIT...");
+        }, 6000);
+    });
+
+    let a = await p1;
+    console.log(a);
+    let b = await p2;
+    console.log(b);
+
+    const z = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject("!! IN CONTROL ;) LOADING HACKS...");
+        }, 5000);
+    })
+
+    setTimeout(() => {
+        console.log(".......");
+    }, 1500);
+    setTimeout(() => {
+        console.log(".......");
+    }, 3000);
+    setTimeout(() => {
+        console.log(".......");
+    }, 7000);
+
+    let p3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("!! ALL HACKS ARE INSTALLED SUCCESSFULLY XD")
+            resolve("Hacking wifi.... Please wait...");
+        }, 12000);
+    });
+    let wait = new Promise((resolve, reject) => {
+        p3.then((value) => {
+            setTimeout(() => {
+                alert(value);
+                resolve("LOADING RESOURCES FROM IP ADDRESS.... Please wait...")
+            }, 3000);
+        })
+    })
+
+    let newwait = await wait;
+
+    let last = new Promise((resolve, reject) => {
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log(newwait)
+            }, 3000);
+            setTimeout(() => {
+                console.log("FETCHED ONLINE DATA: GOOGLE CHROME DATA INVE.., BRAVE DETAILS-STA.., WHATSAPP HISTORY-FILES-IMAG..")
+            }, 9000);
+            setTimeout(() => {
+                console.log("INSTAGRAM ACCOUNT-ACTIVTIES AND STOR.., CLOUD COMBINE ANOLO.., GOOGLE DRIVE FIL..\n..............................................,\n..............................................,\n..............................................,\n..............................................");
+                resolve(0);
+            }, 15000);
+        }).then(() => {
+            new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("FETCHING INSTAGRAM ACCOUNT DATA AND ID PASSWORD...")
+                    resolve("-- DEEPAK AGRARWAL/DEEPAK SAHU/DEEPAK SINGH/DEEPAK GAUR/DEEPAK PANJWANI/DEEPAK KALVESH/.................................")
+                }, 5000);
+            }).then((value) => {
+                setTimeout(() => {
+                    console.log(value);
+                }, 6000);
+                setTimeout(() => {
+                    console.log("FROM THE ABOVE INSTAGRAM ACCOUNTS,,BOT IS VERIFYINING WHICH ONE IS YOUR ID FROM THIS DEVICE'S GMAIL ADDRESS...")
+                    resolve(1);
+                }, 10000);
+            })
+        })
+    });
+
+
+    let las = await last;
+    setTimeout(() => {
+        new Promise((resolve, reject) => {
+            reject("FROM THIS DEVISE'S GMAIL,, ~DEEPAK SINGH~ IS YOUR INSTAGRAM ID AND THIS IS YOUR PASSWORD:: *************")
+        })
+    }, 10000);
+
+
+    setTimeout(() => {
+        setInterval(() => {
+            new Promise((resolve, reject) => {
+                reject("YOUR ACCOUNT IS GETTING HACKED**\nCLOSE THIS SITE TO GET SECURE IN ABOVE GIVEN TIME! ! ! ! !");
+                console.log("---------");
+            })
+        }, 1000);
+    }, 20000);
+}
+btn.addEventListener('click', y);
